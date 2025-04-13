@@ -1,0 +1,29 @@
+.statistics-panel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    width: 208px;
+    padding: 16px 0 52px;
+    margin-top: 80px;
+    height: calc(100dvh - 80px);
+    position: fixed;
+    right: 0;
+}
+.statistics-panel__statistics-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.statistics-panel__note {
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(196, 255, 97, 0.7),
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+.statistics-panel__note-text {
+    font-size: 0.75rem;
+    color: #000000a3;
+}
