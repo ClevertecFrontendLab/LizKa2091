@@ -1,0 +1,51 @@
+.menu-area {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 256px;
+    height: calc(100dvh - 80px);
+    padding: 24px 0 32px;
+    margin-top: 80px;
+    position: fixed;
+}
+.menu-area__extra {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 16px;
+    padding: 0 24px;
+    line-height: 16px;
+}
+.menu-area__extra-version {
+    color: #0000003d;
+    margin: 0;
+}
+.menu-area__extra-rights {
+    color: #000000a3;
+    margin: 0;
+}
+
+.accordion {
+    overflow-y: auto;
+}
+.accordion-button__item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.accordion-button__item-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px;
+}
+.accordion__button:focus {
+    outline: none;
+}
+.subcategory-rectange {
+    background-color: #c4ff61;
+}
