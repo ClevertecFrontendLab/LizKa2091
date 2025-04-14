@@ -17,7 +17,7 @@ const HomePage: FC = () => (
         <div className='layout'>
             <MenuArea />
             <main className='main'>
-                <Searchbar />
+                <Searchbar type='default' />
                 <NewRecipes />
                 <Juiciest />
                 <CookBlog />

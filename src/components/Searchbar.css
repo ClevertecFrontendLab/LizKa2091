@@ -16,6 +16,12 @@
     font-size: 3rem;
     font-weight: 700;
 }
+.search__subtitle {
+    font-weight: 500;
+    color: #0000007a;
+    max-width: 696px;
+    margin-top: -24px;
+}
 .search__form__row {
     display: flex;
     justify-content: space-between;
