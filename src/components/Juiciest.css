@@ -35,6 +35,7 @@
     flex-direction: column;
     gap: 24px;
     padding: 20px 24px;
+    width: 100%;
 }
 .juiciest__item-img {
     border: 1px solid #fff;
@@ -101,4 +102,25 @@
     left: 24px;
     bottom: 20px;
     padding: 0 8px;
+}
+.juiciest__button {
+    width: 197px;
+}
+
+@media (max-width: 1871px) {
+    .juiciest__item {
+        width: 100%;
+        max-width: 100%;
+    }
+    .juiciest__item-description {
+        max-width: 100%;
+    }
+}
+@media (max-width: 1440px) {
+    .juiciest__title {
+        font-size: 2.25rem;
+    }
+    .juiciest__button {
+        width: 167px;
+    }
 }

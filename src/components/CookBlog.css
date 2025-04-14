@@ -14,6 +14,7 @@
 }
 .cook-blog__title {
     font-size: 2.25rem;
+    font-weight: 500;
 }
 .cook-blog__list {
     display: flex;
@@ -25,15 +26,15 @@
     background-color: #fff;
     border: 1px solid #00000014;
     border-radius: 8px;
-    width: 33%;
+    width: calc(33% - 16px);
     max-width: 426.67px;
     height: 184px;
     padding: 24px;
 }
 .cook-blog__item-top {
     display: flex;
-    height: 50%;
     gap: 12px;
+    height: 48px;
 }
 .cook-blog__item-column {
     display: flex;
@@ -44,6 +45,10 @@
 .cook-blog__item-title {
     font-size: 1.125rem;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 174px;
 }
 .cook-blog__item-subtitle {
     font-size: 0.875rem;
@@ -53,4 +58,12 @@
     font-size: 0.875rem;
     text-align: left;
     padding: 12px 0 20px;
+}
+@media (max-width: 1440px) {
+    .cook-blog__button {
+        width: 149px;
+    }
+    .cook-blog__item {
+        padding: 16px;
+    }
 }

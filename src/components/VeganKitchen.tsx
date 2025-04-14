@@ -51,77 +51,79 @@ const VeganKitchen: FC = () => {
     ];
 
     return (
-        <div className='vegan-kitchen'>
-            <div className='vegan-kitchen__left'>
-                <h3 className='vegan-kitchen__title'>Веганская кухня</h3>
-                <ul className='vegan-kitchen__list'>
-                    {items.map((item: IVeganItem, index) => (
-                        <li key={index} className='vegan-kitchen__item'>
-                            <div className='vegan-kitchen__item-top'>
-                                <p className='vegan-kitchen__item-title'>{item.title}</p>
-                                <p className='vegan-kitchen__item-text'>{item.text}</p>
-                            </div>
-                            <div className='vegan-kitchen__item-bottom'>
-                                <span className='vegan-kitchen__item-category'>
-                                    <item.image className='vegan-kitchen__item-category-image' />
-                                    {item.category}
-                                </span>
-                                <div className='vegan-kitchen__item-buttons'>
-                                    {item.marks && (
-                                        <Button
-                                            leftIcon={<MarkIcon />}
-                                            backgroundColor='#fff'
-                                            color='#2DB100'
-                                            p='0 4px'
-                                        >
-                                            {item.marks}
-                                        </Button>
-                                    )}
-                                    {item.favorites && (
-                                        <Button
-                                            leftIcon={<FavoriteIcon />}
-                                            backgroundColor='#fff'
-                                            color='#2DB100'
-                                            p='0 4px'
-                                        >
-                                            {item.favorites}
-                                        </Button>
-                                    )}
+        <>
+            <div className='vegan-kitchen'>
+                <div className='vegan-kitchen__top'>
+                    <h3 className='vegan-kitchen__title'>Веганская кухня</h3>
+                    <p className='vegan-kitchen__subtitle'>
+                        Интересны не только убеждённым вегетарианцам, но и тем, кто хочет
+                        попробовать вегетарианскую диету и готовить вкусные вегетарианские блюда.
+                    </p>
+                </div>
+                <div className='vegan-kitchen__bottom'>
+                    <ul className='vegan-kitchen__list'>
+                        {items.map((item: IVeganItem, index) => (
+                            <li key={index} className='vegan-kitchen__item'>
+                                <div className='vegan-kitchen__item-top'>
+                                    <p className='vegan-kitchen__item-title'>{item.title}</p>
+                                    <p className='vegan-kitchen__item-text'>{item.text}</p>
                                 </div>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
+                                <div className='vegan-kitchen__item-bottom'>
+                                    <span className='vegan-kitchen__item-category'>
+                                        <item.image className='vegan-kitchen__item-category-image' />
+                                        {item.category}
+                                    </span>
+                                    <div className='vegan-kitchen__item-buttons'>
+                                        {item.marks && (
+                                            <Button
+                                                leftIcon={<MarkIcon />}
+                                                backgroundColor='#fff'
+                                                color='#2DB100'
+                                                p='0 4px'
+                                            >
+                                                {item.marks}
+                                            </Button>
+                                        )}
+                                        {item.favorites && (
+                                            <Button
+                                                leftIcon={<FavoriteIcon />}
+                                                backgroundColor='#fff'
+                                                color='#2DB100'
+                                                p='0 4px'
+                                            >
+                                                {item.favorites}
+                                            </Button>
+                                        )}
+                                    </div>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul className='vegan-kitchen__rec-list'>
+                        {recommendationItems.map((item: IVeganRecommendation, index) => (
+                            <li key={index} className='vegan-kitchen__rec-item'>
+                                <div className='vegan-kitchen__item-container'>
+                                    <item.image className='vegan-kitchen__item-img' />
+                                    <p className='vegan-kitchen__item-rec-title'>{item.title}</p>
+                                </div>
+                                <Button
+                                    backgroundColor='#fff'
+                                    border='1px solid #2DB100'
+                                    borderRadius={6}
+                                    fontSize='0.875rem'
+                                    fontWeight={600}
+                                    color='#2DB100'
+                                    w={87}
+                                    h={8}
+                                >
+                                    Готовить
+                                </Button>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
-            <div className='vegan-kitchen__right'>
-                <p className='vegan-kitchen__subtitle'>
-                    Интересны не только убеждённым вегетарианцам, но и тем, кто хочет попробовать
-                    вегетарианскую диету и готовить вкусные вегетарианские блюда.
-                </p>
-                <ul className='vegan-kitchen__rec-list'>
-                    {recommendationItems.map((item: IVeganRecommendation, index) => (
-                        <li key={index} className='vegan-kitchen__rec-item'>
-                            <div className='vegan-kitchen__item-container'>
-                                <item.image className='vegan-kitchen__item-img' />
-                                <p className='vegan-kitchen__item-rec-title'>{item.title}</p>
-                            </div>
-                            <Button
-                                backgroundColor='#fff'
-                                border='1px solid #2DB100'
-                                borderRadius={6}
-                                fontSize='0.875rem'
-                                fontWeight={600}
-                                color='#2DB100'
-                                w={87}
-                                h={8}
-                            >
-                                Готовить
-                            </Button>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
+        </>
     );
 };
 

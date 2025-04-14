@@ -18,7 +18,7 @@ interface IBlogReview {
 const CookBlog: FC = () => {
     const blogPeople: IBlogReview[] = [
         {
-            name: 'Елена высоцкая',
+            name: 'Елена Высоцкая',
             username: '@elenapovar',
             text: 'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
             profileIcon: userIcon1,
@@ -48,6 +48,7 @@ const CookBlog: FC = () => {
                     fontWeight={600}
                     color='#000'
                     p='10px 24px'
+                    className='cook-blog__button'
                 >
                     Все авторы
                 </Button>

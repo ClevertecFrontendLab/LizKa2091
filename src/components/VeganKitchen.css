@@ -1,5 +1,6 @@
 .vegan-kitchen {
     display: flex;
+    flex-direction: column;
     background-color: #fff;
     color: #000;
     gap: 24px;
@@ -15,6 +16,7 @@
     font-size: 3rem;
     font-weight: 500;
     text-align: left;
+    line-height: 40px;
 }
 .vegan-kitchen__list {
     display: flex;
@@ -91,12 +93,13 @@
     color: #000000a3;
     line-height: 24px;
     text-align: left;
-    margin-top: 24px;
+    max-width: 668px;
 }
 .vegan-kitchen__rec-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 668px;
 }
 .vegan-kitchen__item-container {
     display: flex;
@@ -122,4 +125,44 @@
 .vegan-kitchen__item-rec-title {
     font-size: 1.25rem;
     font-weight: 500;
+}
+.vegan-kitchen__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vegan-kitchen__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1440px) {
+    .vegan-kitchen__top {
+        justify-content: flex-start;
+        gap: 18px;
+    }
+    .vegan-kitchen__item {
+        width: 282px;
+    }
+    .vegan-kitchen__title {
+        width: 284px;
+    }
+    .vegan-kitchen__subtitle {
+        width: 100%;
+    }
+    .vegan-kitchen {
+        justify-content: space-between;
+    }
+    .vegan-kitchen__right {
+        width: calc(100% - 282px - 282px);
+    }
+    .vegan-kitchen__list {
+        gap: 16px;
+    }
+    .vegan-kitchen__rec-item {
+        padding: 0 12px;
+    }
+    .vegan-kitchen__item-rec-title {
+        font-size: 1.125rem;
+    }
 }

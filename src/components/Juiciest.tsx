@@ -79,8 +79,8 @@ const Juiciest: FC = () => {
                     fontSize='1.125rem'
                     fontWeight={600}
                     color='#000'
-                    w={197}
                     h={12}
+                    className='juiciest__button'
                 >
                     Вся подборка
                 </Button>
