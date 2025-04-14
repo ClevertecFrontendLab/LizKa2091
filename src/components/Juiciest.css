@@ -1,6 +1,9 @@
 .juiciest {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     padding: 16px 24px 40px;
+    gap: 24px;
 }
 .juiciest__title {
     font-size: 3rem;
@@ -10,6 +13,7 @@
 .juiciest__top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .juiciest__list {
     display: flex;
@@ -39,6 +43,7 @@
 .juiciest__item-top {
     display: flex;
     justify-content: space-between;
+    height: 24px;
 }
 .juiciest__item-category {
     display: flex;
@@ -52,6 +57,7 @@
 }
 .juiciest__item-buttons {
     display: flex;
+    align-items: center;
     gap: 16px;
 }
 .juiciest__item-middle {

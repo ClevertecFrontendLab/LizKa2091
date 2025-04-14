@@ -113,7 +113,7 @@ const VeganKitchen: FC = () => {
                                 fontWeight={600}
                                 color='#2DB100'
                                 w={87}
-                                h={32}
+                                h={8}
                             >
                                 Готовить
                             </Button>

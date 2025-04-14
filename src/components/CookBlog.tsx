@@ -59,7 +59,7 @@ const CookBlog: FC = () => {
                             <Image
                                 src={review.profileIcon}
                                 alt={review.name}
-                                boxSize={48}
+                                boxSize={12}
                                 borderRadius='full'
                             />
                             <div className='cook-blog__item-column'>

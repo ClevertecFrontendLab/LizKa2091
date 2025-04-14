@@ -80,7 +80,7 @@ const Juiciest: FC = () => {
                     fontWeight={600}
                     color='#000'
                     w={197}
-                    h={48}
+                    h={12}
                 >
                     Вся подборка
                 </Button>
@@ -126,10 +126,11 @@ const Juiciest: FC = () => {
                                 <Button
                                     leftIcon={<MarkIcon />}
                                     backgroundColor='#fff'
+                                    border='1px solid #0000007A'
                                     color='#000'
                                     fontSize='0.875rem'
                                     w={122}
-                                    h={32}
+                                    h={8}
                                 >
                                     Сохранить
                                 </Button>
@@ -138,7 +139,7 @@ const Juiciest: FC = () => {
                                     color='#fff'
                                     fontSize='0.875rem'
                                     w={87}
-                                    h={32}
+                                    h={8}
                                 >
                                     Готовить
                                 </Button>
@@ -152,8 +153,8 @@ const Juiciest: FC = () => {
                                             ? userIcon1
                                             : userIcon2
                                     }
-                                    w={16}
-                                    h={16}
+                                    w={4}
+                                    h={4}
                                 />
                                 <p className='juiciest-recommended__text'>
                                     {recipe.recommended} рекомендует

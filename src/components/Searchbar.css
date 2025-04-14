@@ -4,6 +4,7 @@
     background-color: #fff;
     color: #000;
     width: 100%;
+    padding-top: 32px;
 }
 .search__inner {
     display: flex;
@@ -13,6 +14,7 @@
 }
 .search__title {
     font-size: 3rem;
+    font-weight: 700;
 }
 .search__form__row {
     display: flex;
@@ -34,7 +36,6 @@ select {
     color: #134b00;
     width: 234px;
     height: 40px;
-    padding: 8px 16px;
 }
 .search__form__t {
     font-weight: 500;

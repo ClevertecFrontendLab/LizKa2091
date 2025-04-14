@@ -16,15 +16,15 @@ const Searchbar: FC = () => {
         <div className='search'>
             <div className='search__inner'>
                 <h2 className='search__title'>Приятного аппетита!</h2>
-                <FormControl display='flex' flexDirection='column' gap={16}>
+                <FormControl display='flex' flexDirection='column' gap={4}>
                     <div className='search__form__row'>
                         <Button
                             className='search__form-button'
-                            leftIcon={<FilterIcon w={24} h={24} />}
+                            leftIcon={<FilterIcon w={24} h={24} boxSize={6} />}
                             backgroundColor='#fff'
                             border='1px solid #0000007A'
                             borderRadius={6}
-                            p='5px 12px 5px 17px'
+                            p='7.5px 5.5px 7.5px 12.5px'
                         />
                         <Input
                             onChange={handleSearchChange}
@@ -49,7 +49,7 @@ const Searchbar: FC = () => {
                         <Select
                             placeholder='Выберите из списка...'
                             maxWidth={234}
-                            borderColor='#0000007A'
+                            borderColor='#00000014'
                             borderRadius='6px'
                             backgroundColor='#fff'
                             color='#134B00'

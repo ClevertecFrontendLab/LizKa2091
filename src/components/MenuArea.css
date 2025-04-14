@@ -30,6 +30,7 @@
 
 .accordion {
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .accordion-button__item-info {
     display: flex;

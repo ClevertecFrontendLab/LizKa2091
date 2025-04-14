@@ -213,29 +213,31 @@ const MenuArea: FC = () => {
 
     return (
         <aside className='menu-area aside'>
-            <Accordion allowToggle p={10} className='accordion'>
+            <Accordion allowToggle p='10px 16px' className='accordion'>
                 {menuItems.map((item, index) => (
-                    <AccordionItem key={index}>
+                    <AccordionItem key={index} width={230} border={0}>
                         <Box as='h2' m={0}>
                             <AccordionButton
                                 className='accordion__button'
                                 _expanded={{ bg: '#EAFFC7', fontWeight: 700 }}
                                 _hover={{ bg: '#FFFFD3', fontWeight: 700 }}
-                                border='0'
+                                border={0}
                                 fontWeight={500}
-                                bgColor='inherit'
-                                color='#000'
                                 display='flex'
                                 justifyContent='space-between'
+                                alignItems='center'
                                 fontSize='1rem'
                                 p='12px 8px'
                                 m={0}
+                                position='relative'
                             >
                                 <div className='accordion-button__item-info'>
                                     <Icon as={item.icon} boxSize='24px' />
                                     <p className='accordion-button__item-name'>{item.name}</p>
                                 </div>
-                                <AccordionIcon width={16} height={16} />
+                                <Box>
+                                    <AccordionIcon width={13} height={7} boxSize={6} right={0} />
+                                </Box>
                             </AccordionButton>
                         </Box>
                         {item.subcategories.map((subcategory, index) => (

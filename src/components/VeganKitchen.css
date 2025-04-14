@@ -3,6 +3,7 @@
     background-color: #fff;
     color: #000;
     gap: 24px;
+    padding: 24px 0;
 }
 .vegan-kitchen__left {
     display: flex;
@@ -58,6 +59,7 @@
 .vegan-kitchen__item-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .vegan-kitchen__item-category {
     display: flex;
@@ -68,6 +70,7 @@
     border-radius: 4px;
     font-size: 0.875rem;
     padding: 2px 8px;
+    height: 24px;
 }
 .vegan-kitchen__item-category-image {
     margin-right: 8px;

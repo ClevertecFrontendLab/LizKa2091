@@ -13,7 +13,7 @@ const StatisticsPanel: FC = () => (
                 backgroundColor='#fff'
                 color='#2DB100'
                 width={85}
-                height={40}
+                height={10}
             >
                 185
             </Button>
@@ -22,7 +22,7 @@ const StatisticsPanel: FC = () => (
                 backgroundColor='#fff'
                 color='#2DB100'
                 width={85}
-                height={40}
+                height={10}
             >
                 589
             </Button>
@@ -31,17 +31,19 @@ const StatisticsPanel: FC = () => (
                 backgroundColor='#fff'
                 color='#2DB100'
                 width={85}
-                height={40}
+                height={10}
             >
                 587
             </Button>
         </div>
         <div className='statistics-panel__note'>
             <Button
-                leftIcon={<NoteIcon width={48} height={48} />}
+                leftIcon={<NoteIcon width={12} height={12} />}
                 p={0}
                 background='radial-gradient(50.00% 50.00% at 50% 50%,rgba(196, 255, 97, 0.7),rgba(255, 255, 255, 0) 100%)'
-            ></Button>
+                _hover={{ outline: 'none', border: 0 }}
+                _active={{ outline: 'none', border: 0 }}
+            />
             <p className='statistics-panel__note-text'>Записать рецепт</p>
         </div>
     </aside>
